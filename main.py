@@ -5,7 +5,7 @@ import streamlit as st
 importlib.reload(functions)
 from functions import *
 
-st.title('债券计算器', anchor='calculator')
+st.title('债券计算器')
 
 st.sidebar.header('债券参数设置')
 compounding_frequency = st.sidebar.selectbox('付息频率', ['每年', '每半年', '每季度', '每月', '连续复利'])
