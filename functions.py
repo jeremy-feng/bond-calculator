@@ -2,7 +2,7 @@ import numpy as np
 
 
 class Bond:
-    coupon_frequency_dict = {'每年': 1, '每半年': 2, '每季度': 4, '每月': 12, '连续复利': 1000}
+    coupon_frequency_dict = {'每年': 1, '每半年': 2, '每季度': 4, '每月': 12}
 
     def __init__(self, coupon_frequency, face_value, years_to_maturity, coupon_rate, market_rate):
         self.coupon_frequency = coupon_frequency

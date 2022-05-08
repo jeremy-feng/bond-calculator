@@ -8,7 +8,7 @@ from functions import *
 st.title('债券计算器')
 
 st.sidebar.header('债券参数设置')
-compounding_frequency = st.sidebar.selectbox('付息频率', ['每年', '每半年', '每季度', '每月', '连续复利'])
+compounding_frequency = st.sidebar.selectbox('付息频率', ['每年', '每半年', '每季度', '每月'])
 face_value = st.sidebar.number_input(label='面值（元）', value=100.0, step=1.0, format='%f')
 years_to_maturity = st.sidebar.number_input(label='到期年限（年）', value=10.0, step=1.0, format='%f')
 coupon_rate = st.sidebar.number_input(label='票息率（%）', value=10.0, step=1.0, format='%f')
