@@ -19,9 +19,9 @@ bond = Bond(compounding_frequency, face_value, years_to_maturity, coupon_rate, m
 st.markdown('''
 || 计算公式| 计算结果 |
 | -------------- | ------------------------------------------------------------ | -------- |
-|**价格**| $P=\sum_{{t=1}}^{{T}} \\frac{{C F_{{t}}}}{{(1+y)^{{t}}}}$               |     {:.2f}     |
-| **麦考利久期** | $D=\sum_{{t=1}}^{{T}} t \\times \\frac{{C F_{{t}}}}{{(1+y)^{{t}} P}}$      |   {:.2f}       |
-| **修正久期**   | $D^{{*}}=\\frac{{D}}{{1+y}}$                                        |     {:.2f}     |
-| **凸性**       | $C=\sum_{{t=1}}^{{T}} t(t+1) \\times \\frac{{C F_{{t}}}}{{(1+y)^{{t+2}} P}}$ |   {:.2f}       |
+|**价格**| $P=\sum_{{t=1}}^{{T}} \\frac{{C F_{{t}}}}{{(1+y)^{{t}}}}$               |     {:.4f}     |
+| **麦考利久期** | $D=\sum_{{t=1}}^{{T}} t \\times \\frac{{C F_{{t}}}}{{(1+y)^{{t}} P}}$      |   {:.4f}       |
+| **修正久期**   | $D^{{*}}=\\frac{{D}}{{1+y}}$                                        |     {:.4f}     |
+| **凸性**       | $C=\sum_{{t=1}}^{{T}} t(t+1) \\times \\frac{{C F_{{t}}}}{{(1+y)^{{t+2}} P}}$ |   {:.4f}       |
 '''.format(bond.price(), bond.macaulay_duration(), bond.modified_duration(), bond.convexity())
             )
